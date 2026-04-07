@@ -261,6 +261,29 @@
     }
     footer strong { color: #fff; }
 
+    /* ── CHAT HINTS ── */
+    .chat-hint {
+      margin-top: 28px;
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+    .chat-hint-cta {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 2px solid rgba(255,255,255,0.5);
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 680px) {
       .hero h1 { font-size: 34px; }
@@ -284,7 +307,7 @@
   <nav>
     <a href="#products">Продукция</a>
     <a href="#why">О нас</a>
-    <a href="#contact" class="header-cta" onclick="openChat()">Написать нам</a>
+    <a href="#contact">Контакты</a>
   </nav>
 </header>
 
@@ -294,8 +317,10 @@
   <h1>Рога и Копыта —<br><span>оптом по всей России</span></h1>
   <p>Поставляем натуральное сырьё животного происхождения крупным и средним оптом. Работаем напрямую с производителями — без посредников.</p>
   <div class="hero-buttons">
-    <button class="btn-primary" onclick="openChat()">💬 Написать в чат</button>
     <a class="btn-secondary" href="#products">Смотреть продукцию</a>
+  </div>
+  <div class="chat-hint">
+    💬 Чтобы написать нам — нажмите на иконку чата в правом нижнем углу экрана
   </div>
 </section>
 
@@ -330,28 +355,28 @@
         <h3>Рога оленьи</h3>
         <p>Свежесрезанные и высушенные рога северного оленя. Применяются в фармацевтике и декоре.</p>
         <div class="product-price">от 1 200 ₽/кг</div>
-        <button class="btn-order" onclick="openChat()">Узнать цену</button>
+        <button class="btn-order">Узнать цену ↘ чат</button>
       </div>
       <div class="product-card">
         <span class="product-emoji">🐄</span>
         <h3>Рога крупного рогатого скота</h3>
         <p>Очищенные рога КРС для производства пуговиц, рукояток, сувенирной продукции.</p>
         <div class="product-price">от 280 ₽/кг</div>
-        <button class="btn-order" onclick="openChat()">Узнать цену</button>
+        <button class="btn-order">Узнать цену ↘ чат</button>
       </div>
       <div class="product-card">
         <span class="product-emoji">🐎</span>
         <h3>Копыта лошадиные</h3>
         <p>Переработанные и высушенные копыта лошадей. Используются как удобрение и в косметологии.</p>
         <div class="product-price">от 95 ₽/кг</div>
-        <button class="btn-order" onclick="openChat()">Узнать цену</button>
+        <button class="btn-order">Узнать цену ↘ чат</button>
       </div>
       <div class="product-card">
         <span class="product-emoji">🦬</span>
         <h3>Копыта КРС</h3>
         <p>Копыта крупного рогатого скота оптом. Высокое содержание кератина. Экспортное качество.</p>
         <div class="product-price">от 70 ₽/кг</div>
-        <button class="btn-order" onclick="openChat()">Узнать цену</button>
+        <button class="btn-order">Узнать цену ↘ чат</button>
       </div>
     </div>
   </div>
@@ -401,9 +426,8 @@
 <section class="cta-section" id="contact">
   <h2>Готовы сделать заказ?</h2>
   <p>Напишите нам прямо сейчас — ответим за 15 минут и рассчитаем стоимость для вашего объёма.</p>
-  <div class="cta-buttons">
-    <button class="btn-white" onclick="openChat()">💬 Написать в чат</button>
-    <button class="btn-outline-white" onclick="openChat()">📞 Заказать звонок</button>
+  <div class="chat-hint-cta">
+    👇 Нажмите на иконку чата в правом нижнем углу экрана
   </div>
 </section>
 
